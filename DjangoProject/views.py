@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-
 def home(request):
     return render(request, 'index.html')
 
@@ -19,6 +18,20 @@ def gallery_single(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+# def contact(request):
+#     # if request.method == "POST":
+#     #     name = request.POST['name']
+#     #     email = request.POST['email']
+#     #     subject = request.POST['subject']
+#     #     message = request.POST['message']
+#     #
+#     #     ob = Contact(name=name, email=email, contact=contact,
+#     #                  subject=subject)
+#     #     ob.save()
+#     #     return redirect('contact')
+#
+#     return render(request, 'contact.html')
 
 
 def service(request):
